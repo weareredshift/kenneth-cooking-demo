@@ -1,0 +1,14 @@
+.list--aside {
+  border-left: 0.2rem solid $dark;
+  padding-left: 3rem;
+
+  > li {
+    @include font(bold);
+    @include font-size(b2);
+    margin-bottom: 3rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

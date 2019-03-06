@@ -1,0 +1,41 @@
+.disable-scroll {
+  overflow: hidden;
+}
+
+// align content left for box model layouts
+.layout--left {
+  float: left;
+}
+
+// align content left for box model layouts
+.layout--right {
+  float: right;
+}
+
+// force position relative, used to constrain absolute children
+.layout--relative {
+  position: relative;
+}
+
+.layout--block {
+  display: block;
+}
+
+// clearfix class, % defined in extends
+.cf {
+  @extend %clearfix;
+}
+
+.app {
+  background-color: black;
+  height: 100vh;
+}
+
+.pagecontent {
+  background: white;
+  height: 90vh;
+  width: 45vh;
+  margin: 5vh auto;
+  border-radius: 10px;
+  padding: 10px;
+}
