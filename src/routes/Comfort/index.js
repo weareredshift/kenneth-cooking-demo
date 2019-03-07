@@ -1,15 +1,23 @@
 import React from 'react';
-import Slider from 'rc-slider';
-
 import Page from 'containers/Page';
-
 import './Comfort.scss';
 
 export const Comfort = () => (
   <Page pageIndex={ 0 }>
-    <h2 className="prompt">How comfortable do you feel in the kitchen?</h2>
+    <h1 className="pageheader mb8">How comfortable do you feel in the kitchen?</h1>
     <div className="slider-container">
-      <Slider min={ 0 } max={ 10 } />
+
+      <div className="range__container">
+        <span>-</span>
+        <input type="range" />
+        <span>+</span>
+      </div>
+
+      <div className="range__labels">
+        <span>I've never been in a kitchen</span>
+
+        <span>I cook for a living</span>
+      </div>
     </div>
   </Page>
 );

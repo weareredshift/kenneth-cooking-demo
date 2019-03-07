@@ -7,18 +7,19 @@ const routes = [
   '/comfort',
   '/skills',
   '/questions',
-  '/' // TODO: Add final route
+  '/confirmation'
 ];
 
-export const Page = ({ pageIndex, children }) => {
+export const Page = ({ pageIndex, children, buttonEnabled }) => {
   return (
-    <div className="page">
+    <div className="page row">
       <Header
         pageIndex={ pageIndex }
         pageCount={ routes.length }
+        routes={ routes }
       />
       { children }
-      <Footer route={ routes[pageIndex + 1] } />
+      <Footer route={ routes[pageIndex + 1] || '/' } buttonEnabled={ buttonEnabled } />
     </div>
   );
 }

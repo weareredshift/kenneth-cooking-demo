@@ -1,3 +1,11 @@
 @import 'styles/_sass-includes.scss';
 
+.btngroup {
+  display: flex;
+  flex-wrap: wrap;
 
+  .skill-card {
+    width: calc(50% - 20px);
+    margin: 0 10px 35px;
+  }
+}

@@ -37,5 +37,33 @@
   height: 67.7rem;
   margin: 5vh auto;
   border-radius: 2rem;
-  padding: 2.5rem;
+  display: flex;
+}
+
+.pageheader {
+  @include font(bold);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F8F8;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(#F8F8F8, 5);
+  }
+
+  &.selected {
+    @include font(bold);
+    background-color: #FFAB4C;
+    color: $white;
+  }
 }

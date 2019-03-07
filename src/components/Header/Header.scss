@@ -1,0 +1,30 @@
+@import 'styles/_sass-includes.scss';
+
+.header {
+  text-align: center;
+}
+
+.pagecounter {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  color: $black;
+
+  &.current {
+    border-color: #EDBA2C;
+  }
+
+  &.upcoming {
+    background-color: #FFF9F0;
+    border-color: #FFF9F0;
+  }
+
+  &.done {
+    background-color: #EDBA2C;
+  }
+}

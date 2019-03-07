@@ -9,7 +9,7 @@ import Home from './Home';
 import Skills from './Skills';
 import Comfort from './Comfort';
 import Questions from './Questions';
-
+import Confirmation from './Confirmation';
 
 /**
  * App routes.
@@ -20,7 +20,8 @@ export const routes = [
   { path: '/', component: Home },
   { path: '/skills', component: Skills, pageRoute: true },
   { path: '/comfort', component: Comfort, pageRoute: true },
-  { path: '/questions', component: Questions, pageRoute: true }
+  { path: '/questions', component: Questions, pageRoute: true },
+  { path: '/confirmation', component: Confirmation, pageRoute: true }
 ];
 
 /**

@@ -1,0 +1,11 @@
+@import 'styles/_sass-includes.scss';
+
+.home {
+  background-image: url('../../assets/img/splash_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h1 {
+    text-shadow: 0 0.2rem 0.4rem rgba($black, 0.5);
+  }
+}

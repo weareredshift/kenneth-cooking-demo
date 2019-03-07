@@ -7,7 +7,7 @@ body {
 // default global link styles
 a,
 .typ--link {
-  color: $primary;
+  color: #007AFF;
   transition: color 0.1s ease-in-out;
   cursor: pointer;
 
@@ -25,6 +25,8 @@ a,
 .typ--grey { color: $grey; }
 .typ--greyblue { color: $greyblue; }
 .typ--offwhite { color: $offwhite; }
+
+.typ--yellow { color: #FFA000; }
 
 .bg--primary { background-color: $primary; }
 .bg--dark { background-color: $dark; }

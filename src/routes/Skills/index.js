@@ -22,19 +22,22 @@ const skills = [
 export const Skills = () => {
   const [selected, setSelected] = useState([]);
   return (
-    <Page pageIndex={ 1 }>
-      <h2 className="prompt">Tap skills that you are interested in</h2>
-      {
-        skills.map(skill => (
-          <div
-            className={ `skill-card ${ selected.includes(skill) ? 'selected' : '' }` }
-            key={ skill }
-            onClick={ () => setSelected(toggleInArray(selected, skill)) }
-          >
-            { skill }
-          </div>
-        ))
-      }
+    <Page pageIndex={ 1 } buttonEnabled={ selected.length > 0 ? true : false }>
+      <h1 className="pageheader mb3">Tap skills that you are interested in</h1>
+
+      <div className="btngroup">
+        {
+          skills.map(skill => (
+            <div
+              className={ `skill-card ${ selected.includes(skill) ? 'selected' : '' }` }
+              key={ skill }
+              onClick={ () => setSelected(toggleInArray(selected, skill)) }
+            >
+              { skill }
+            </div>
+          ))
+        }
+      </div>
     </Page>
   );
 };

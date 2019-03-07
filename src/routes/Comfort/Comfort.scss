@@ -1,3 +1,28 @@
 @import 'styles/_sass-includes.scss';
 
+.range__container {
+  display: flex;
 
+  input[type="range"] {
+    flex: 1;
+  }
+
+  span {
+    color: #F11DC5;
+    font-size: 35px;
+    padding: 0 10px;
+  }
+}
+
+.range__labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+
+  span {
+    font-size: 16px;
+    max-width: 120px;
+    display: block;
+    text-align: center;
+  }
+}
